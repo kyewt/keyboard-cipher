@@ -111,6 +111,7 @@ local main = function()
         stdio.ewrite("no string specified")
         return
     end
+    str = string.lower(str)
     if opType == "e" then
         local encoded = encode(str)
         stdio.write(encoded)
